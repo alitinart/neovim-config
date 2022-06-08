@@ -7,5 +7,7 @@ Feel free to use it !
 
 ```
 git clone https://github.com/alitinart/neovim-config
-
 ```
+
+Checkout NeoVim :
+https://neovim.io/
