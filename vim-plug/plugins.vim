@@ -22,8 +22,11 @@ call plug#begin('~/.config/nvim/autoload/')
 	Plug 'tpope/vim-rhubarb'
 	Plug 'tpope/vim-fugitive'
 	Plug 'mhinz/vim-signify'
-	Plug 'junegun/gv.vim'
 
 	Plug 'alvan/vim-closetag'
+	Plug 'neoclide/npm.nvim', {'do' : 'npm install'}
+	Plug 'nvim-lua/completion-nvim'
+	Plug 'SirVer/ultisnips'
+  Plug 'mlaursen/vim-react-snippets'
 
 call plug#end()
