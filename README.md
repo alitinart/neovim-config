@@ -3,6 +3,8 @@
 Hi there !
 This is the config that I currently use for my NeoVim setup.
 
+<img src="../screenshots/terminal.png" />
+
 Feel free to use it !
 
 ```
