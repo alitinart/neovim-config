@@ -21,7 +21,11 @@ call plug#begin('~/.config/nvim/autoload/')
 	"GIT
 	Plug 'tpope/vim-rhubarb'
 	Plug 'tpope/vim-fugitive'
-	Plug 'mhinz/vim-signify'
+	if has('nvim') || has('patch-8.0.902')
+  	Plug 'mhinz/vim-signify'
+	else
+  	Plug 'mhinz/vim-signify', { 'branch': 'legacy' }
+	endif
 
 	Plug 'alvan/vim-closetag'
 	Plug 'neoclide/npm.nvim', {'do' : 'npm install'}
@@ -29,4 +33,6 @@ call plug#begin('~/.config/nvim/autoload/')
 	Plug 'SirVer/ultisnips'
   Plug 'mlaursen/vim-react-snippets'
 
+	Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': 'yarn install --frozen-lockfile'}
+	Plug 'tlvince/vim-auto-commit'
 call plug#end()

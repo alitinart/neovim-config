@@ -1,4 +1,5 @@
 source $HOME/.config/nvim/vim-plug/plugins.vim
+source $HOME/.config/nvim/plug-config/coc.vim	
 
 "Set Colorscheme
 set t_Co=256
@@ -26,6 +27,9 @@ require('lualine').setup({
 })
 END
 
+set foldcolumn=0
+let NERDTreeShowHidden=1
+
 " Use completion-nvim in every buffer
 autocmd BufEnter * lua require'completion'.on_attach()
 " Use <Tab> and <S-Tab> to navigate through popup menu
@@ -38,10 +42,13 @@ set completeopt=menuone,noinsert,noselect
 " Avoid showing message extra message when using completion
 set shortmess+=c
 
+set encoding=utf8
+set guifont=UbuntuMono\ Nerd\ Font\ 11
+
 " possible value: 'UltiSnips', 'Neosnippet', 'vim-vsnip', 'snippets.nvim'
 let g:completion_enable_snippet = 'UltiSnips'
 
-let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.tsx,*.jsx'
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.tsx,*.jsx,*.js'
 
 let g:closetag_regions =  {
 \ 'typescript.tsx': 'jsxRegion,tsxRegion',
