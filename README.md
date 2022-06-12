@@ -3,7 +3,7 @@
 Hi there !
 This is the config that I currently use for my NeoVim setup.
 
-![Terminal Preview](./screenshots/terminal.png)
+![Terminal Preview](https://i.imgur.com/ib0iDaQ.png)
 
 Feel free to use it !
 
